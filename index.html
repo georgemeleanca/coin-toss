@@ -10,19 +10,23 @@
 <body>
   <div class="container">
     <p id="message">Coin Flip</p>
-    <img src="coin-tails.png">
-    <img src="coin-heads.png">
+    <img id = "1" src="coin-tails.png">
+    <img id = "2" src="coin-heads.png">
   </div>
 </body>
 <script>
   let random = Math.floor(Math.random() * 2);
   let text = document.getElementById("message");
+  let tails = document.getElementById("1");
+  let heads = document.getElementById("2");
 
   if (random === 0) {
     text.innerHTML = "You have chosen heads";
+    tails.style.display = "none";
   }
   else {
-    text.innerHTML = "You have chosen tails"
+    text.innerHTML = "You have chosen tails";
+    heads.style.display = "none";
   }
 </script>
 </html>
