@@ -14,4 +14,15 @@
     <img src="coin-heads.png">
   </div>
 </body>
+<script>
+  let random = Math.floor(Math.random() * 2);
+  let text = document.getElementById("message");
+
+  if (random === 0) {
+    text.innerHTML = "You have chosen heads";
+  }
+  else {
+    text.innerHTML = "You have chosen tails"
+  }
+</script>
 </html>
